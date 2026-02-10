@@ -52,3 +52,31 @@ function ncaa_theme_setup() {
     ) );
 }
 add_action( 'after_setup_theme', 'ncaa_theme_setup' );
+
+/**
+ * Add custom body classes for login and register pages
+ */
+function ncaa_custom_body_classes( $classes ) {
+    // Add class when user is not logged in (shows login form)
+    if ( ! is_user_logged_in() ) {
+        $classes[] = 'logged-out';
+
+        // Front page shows login form when logged out
+        if ( is_front_page() ) {
+            $classes[] = 'page-login';
+        }
+    }
+
+    // Check for register page
+    if ( is_page( 'register' ) ) {
+        $classes[] = 'page-register';
+    }
+
+    // Check for password reset page
+    if ( is_page( 'lost-password' ) || is_page( 'reset-password' ) ) {
+        $classes[] = 'page-password-reset';
+    }
+
+    return $classes;
+}
+add_filter( 'body_class', 'ncaa_custom_body_classes' );
