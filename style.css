@@ -20,17 +20,29 @@ Tags: custom-menu, custom-logo, threaded-comments, translation-ready
     --gray-200: #d8d8d8;
     --gray-300: #c0c0c0;
     --gray-400: #a8a8a8;
-    --gray-500: #909090;
+    --gray-500: #A0A0A0;
     --gray-600: #787878;
     --gray-700: #606060;
     --gray-800: #484848;
     --gray-900: #303030;
+    --green: #198754;
+    --green-light: #d1e7dd;
+    --red: #dc3545;
+    --cream: #FFF4D8;
+    --orange: #FE5038;
     --black-transparent-20: rgba(0, 0, 0, 0.20);
 
     /* Dimensions */
     --team-slot-height: 39px;
 
     /* Typography */
+    --basset-one: "basset-one", sans-serif;
+    --basset-three: "basset-three", sans-serif;
+    --basset-four: "basset-four", sans-serif;
+    --basset-five: "basset-five", sans-serif;
+    --basset-six: "basset-six", sans-serif;
+    --basset-seven: "basset-seven", sans-serif;
+    --basset-eight: "basset-eight", sans-serif;
     --font-size-base: .825rem;
     --font-size-small: .75rem;
     --font-size-medium: .875rem;
@@ -50,7 +62,7 @@ Tags: custom-menu, custom-logo, threaded-comments, translation-ready
 body {
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-family: "indivisible", sans-serif;
     font-size: var(--font-size-base);
     line-height: 1.6;
     color: var(--text-color);
@@ -77,8 +89,11 @@ body {
 }
 
 /* Main Content */
-.site-main {
-    min-height: 70vh;
+
+.home {
+    .content-area {
+        padding-bottom: 0;
+    }
 }
 
 .content-area {
@@ -106,3 +121,12 @@ body {
     color: #666;
 }
 
+@media (max-width: 768px) {
+    .content-area {
+        padding: .75rem;
+    }
+    .container {
+        padding: 0;
+        border-top: 0;
+    }
+}

@@ -2,7 +2,7 @@
 
 <footer id="site-footer" class="site-footer">
     <div class="footer-container">
-        <p>&copy; <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?>. All rights reserved.</p>
+        <p><?php bloginfo( 'name' ); ?></p>
     </div>
 </footer>
 
