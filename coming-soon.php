@@ -174,15 +174,15 @@
 
         <div class="features">
             <span class="feature">
-                <img src="<?php echo esc_url( NCAA_BRACKETS_PLUGIN_URL . 'assets/img/basketball.svg' ); ?>" alt="">
+                <img src="/wp-content/uploads/2026/02/basketball.svg" alt="">
                 Predict all 31 autobids
             </span>
             <span class="feature">
-                <img src="<?php echo esc_url( NCAA_BRACKETS_PLUGIN_URL . 'assets/img/basketball.svg' ); ?>" alt="">
+                <img src="/wp-content/uploads/2026/02/basketball.svg" alt="">
                 Climb the leaderboard
             </span>
             <span class="feature">
-                <img src="<?php echo esc_url( NCAA_BRACKETS_PLUGIN_URL . 'assets/img/basketball.svg' ); ?>" alt="">
+                <img src="/wp-content/uploads/2026/02/basketball.svg" alt="">
                 From the SWAC to WAC to MAC
             </span>
         </div>
@@ -193,9 +193,9 @@
         </div>
 
         <div class="cta-banner">
-            <img src="<?php echo esc_url( NCAA_BRACKETS_PLUGIN_URL . 'assets/img/bracket.svg' ); ?>" alt="">
+            <img src="/wp-content/uploads/2026/02/bracket.svg" alt="">
             <span class="cta-text">Make your picks starting <span>March 1st</span> on <span>cbbtourneys.com</span></span>
-            <img src="<?php echo esc_url( NCAA_BRACKETS_PLUGIN_URL . 'assets/img/bracket.svg' ); ?>" alt="">
+            <img src="/wp-content/uploads/2026/02/bracket.svg" alt="">
         </div>
 
         <img src="/wp-content/uploads/2026/02/bracket-preview.jpg" alt="Bracket Preview" class="bracket-preview">
