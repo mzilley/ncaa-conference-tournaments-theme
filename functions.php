@@ -6,6 +6,30 @@
  */
 
 /**
+ * Coming Soon page - only on live domain
+ */
+add_action( 'template_redirect', function() {
+    // Only on live domain
+    if ( $_SERVER['HTTP_HOST'] !== 'cbbtourneys.com' ) {
+        return;
+    }
+
+    // Allow logged-in admins to bypass
+    if ( is_user_logged_in() && current_user_can( 'manage_options' ) ) {
+        return;
+    }
+
+    // Allow wp-admin and wp-login access
+    if ( strpos( $_SERVER['REQUEST_URI'], 'wp-admin' ) !== false ||
+         strpos( $_SERVER['REQUEST_URI'], 'wp-login' ) !== false ) {
+        return;
+    }
+
+    include 'wp-content/themes/ncaa-conference-tournaments/coming-soon.php';
+    exit;
+});
+
+/**
  * Enqueue theme styles
  */
 function ncaa_theme_enqueue_styles() {
