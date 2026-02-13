@@ -48,6 +48,7 @@
         .logo {
             text-align: center;
             max-width: 860px;
+            width: 100%;
             margin: 0 auto;
             height: auto;
         }
@@ -123,12 +124,12 @@
             font-size: 28px;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
+            text-align: center;
         }
 
         @media (max-width: 600px) {
             .container {
-                padding: 2rem 1rem;
+                padding: 2rem 1rem 0 1rem;
             }
 
             .tagline {
@@ -154,7 +155,8 @@
             }
 
             .cta-text {
-                font-size: 0.9rem;
+                font-size:clamp(14px, 5vw, 28px);
+                line-height: 1.2;
             }
 
             .cta-banner img {
