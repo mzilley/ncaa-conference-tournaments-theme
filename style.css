@@ -106,6 +106,7 @@ body {
 .site-footer {
     background: var(--white);
     border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
     padding: 2rem 0;
     text-align: center;
 }
