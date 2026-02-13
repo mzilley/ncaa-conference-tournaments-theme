@@ -6,11 +6,11 @@
  */
 
 /**
- * Coming Soon page - only on live domain
+ * Coming Soon page - controlled via admin settings
  */
 add_action( 'template_redirect', function() {
-    // Only on live domain
-    if ( $_SERVER['HTTP_HOST'] !== 'cbbtourneys.com' ) {
+    // Check if coming soon is enabled in settings
+    if ( ! get_option( 'ncaa_coming_soon_enabled', '0' ) ) {
         return;
     }
 
@@ -25,7 +25,7 @@ add_action( 'template_redirect', function() {
         return;
     }
 
-    include 'wp-content/themes/ncaa-conference-tournaments/coming-soon.php';
+    include get_stylesheet_directory() . '/coming-soon.php';
     exit;
 });
 
