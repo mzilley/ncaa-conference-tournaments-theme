@@ -6,30 +6,6 @@
  */
 
 /**
- * Coming Soon page - controlled via admin settings
- */
-add_action( 'template_redirect', function() {
-    // Check if coming soon is enabled in settings
-    if ( ! get_option( 'ncaa_coming_soon_enabled', '0' ) ) {
-        return;
-    }
-
-    // Allow logged-in admins to bypass
-    if ( is_user_logged_in() && current_user_can( 'manage_options' ) ) {
-        return;
-    }
-
-    // Allow wp-admin and wp-login access
-    if ( strpos( $_SERVER['REQUEST_URI'], 'wp-admin' ) !== false ||
-         strpos( $_SERVER['REQUEST_URI'], 'wp-login' ) !== false ) {
-        return;
-    }
-
-    include get_stylesheet_directory() . '/coming-soon.php';
-    exit;
-});
-
-/**
  * Enqueue theme styles
  */
 function ncaa_theme_enqueue_styles() {
