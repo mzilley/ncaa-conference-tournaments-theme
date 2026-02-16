@@ -6,6 +6,8 @@
     </div>
 </footer>
 
+<div class="beta-version-badge">Beta 1.5.0</div>
+
 <?php wp_footer(); ?>
 </body>
 </html>
