@@ -30,6 +30,7 @@ Tags: custom-menu, custom-logo, threaded-comments, translation-ready
     --red: #dc3545;
     --cream: #FFF4D8;
     --orange: #FE5038;
+    --orange-light: #FFEBE6;
     --black-transparent-20: rgba(0, 0, 0, 0.20);
 
     /* Dimensions */
@@ -138,12 +139,11 @@ body {
     bottom: 1rem;
     left: 1rem;
     padding: 0.25rem 0.5rem;
-    background: var(--gray-800);
-    color: var(--white);
-    font-size: var(--font-size-small);
+    background: var(--orange-light);
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    font-size: .7rem;
     font-weight: 500;
-    border-radius: 4px;
-    opacity: 0.7;
     z-index: 9999;
     pointer-events: none;
 }
