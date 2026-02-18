@@ -100,7 +100,7 @@ body {
 .content-area {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 /* Footer */
@@ -124,9 +124,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    .content-area {
-        padding: .75rem;
-    }
     .container {
         padding: 0;
         border-top: 0;
