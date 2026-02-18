@@ -13,7 +13,7 @@ Tags: custom-menu, custom-logo, threaded-comments, translation-ready
 :root {
     /* Colors */
     --body-bg: #f4f4f4;
-    --border-color: #14141426;
+    --border-color: rgba(20, 20, 20, 0.15);
     --text-color: #202121;
     --white: #fefefe;
     --gray-100: #f0f0f0;
