@@ -1,7 +1,7 @@
 </main><!-- #main-content -->
 
 <footer id="site-footer" class="site-footer">
-    <div class="footer-container">
+    <div class="footer-container container">
         <p><?php bloginfo( 'name' ); ?></p>
     </div>
 </footer>
