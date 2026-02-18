@@ -9,11 +9,19 @@
  * Enqueue theme styles
  */
 function ncaa_theme_enqueue_styles() {
-    // Enqueue main theme stylesheet
+    // Enqueue Typekit fonts first (no dependencies, loads early)
+    wp_enqueue_style(
+        'ncaa-typekit',
+        'https://use.typekit.net/ihb3gik.css',
+        array(),
+        null
+    );
+
+    // Enqueue main theme stylesheet (depends on Typekit)
     wp_enqueue_style(
         'ncaa-theme-style',
         get_stylesheet_uri(),
-        array(),
+        array( 'ncaa-typekit' ),
         filemtime( get_stylesheet_directory() . '/style.css' )
     );
 
