@@ -25,35 +25,36 @@ function ncaa_theme_enqueue_styles() {
         filemtime( get_stylesheet_directory() . '/style.css' )
     );
 
-    // Enqueue buttons.css from plugin
-    if ( file_exists( WP_PLUGIN_DIR . '/ncaa-conference-tournaments/assets/css/components/buttons.css' ) ) {
-        wp_enqueue_style(
-            'ncaa-buttons',
-            plugins_url( 'ncaa-conference-tournaments/assets/css/components/buttons.css' ),
-            array(),
-            filemtime( WP_PLUGIN_DIR . '/ncaa-conference-tournaments/assets/css/components/buttons.css' )
-        );
-    }
+    // // Enqueue buttons.css from plugin
+    // if ( file_exists( WP_PLUGIN_DIR . '/ncaa-conference-tournaments/assets/css/components/buttons.css' ) ) {
+    //     wp_enqueue_style(
+    //         'ncaa-buttons',
+    //         plugins_url( 'ncaa-conference-tournaments/assets/css/components/buttons.css' ),
+    //         array(),
+    //         filemtime( WP_PLUGIN_DIR . '/ncaa-conference-tournaments/assets/css/components/buttons.css' )
+    //     );
+    // }
 
-    // Enqueue tables.css from plugin
-    if ( file_exists( WP_PLUGIN_DIR . '/ncaa-conference-tournaments/assets/css/components/tables.css' ) ) {
-        wp_enqueue_style(
-            'ncaa-tables',
-            plugins_url( 'ncaa-conference-tournaments/assets/css/components/tables.css' ),
-            array(),
-            filemtime( WP_PLUGIN_DIR . '/ncaa-conference-tournaments/assets/css/components/tables.css' )
-        );
-    }
+    // // Enqueue tables.css from plugin
+    // if ( file_exists( WP_PLUGIN_DIR . '/ncaa-conference-tournaments/assets/css/components/tables.css' ) ) {
+    //     wp_enqueue_style(
+    //         'ncaa-tables',
+    //         plugins_url( 'ncaa-conference-tournaments/assets/css/components/tables.css' ),
+    //         array(),
+    //         filemtime( WP_PLUGIN_DIR . '/ncaa-conference-tournaments/assets/css/components/tables.css' )
+    //     );
+    // }
 
-    // Enqueue modals.css from plugin
-    if ( file_exists( WP_PLUGIN_DIR . '/ncaa-conference-tournaments/assets/css/components/modals.css' ) ) {
-        wp_enqueue_style(
-            'ncaa-buttons',
-            plugins_url( 'ncaa-conference-tournaments/assets/css/components/modals.css' ),
-            array(),
-            filemtime( WP_PLUGIN_DIR . '/ncaa-conference-tournaments/assets/css/components/modals.css' )
-        );
-    }
+    // // Enqueue modals.css from plugin
+    // if ( file_exists( WP_PLUGIN_DIR . '/ncaa-conference-tournaments/assets/css/components/modals.css' ) ) {
+    //     wp_enqueue_style(
+    //         'ncaa-buttons',
+    //         plugins_url( 'ncaa-conference-tournaments/assets/css/components/modals.css' ),
+    //         array(),
+    //         filemtime( WP_PLUGIN_DIR . '/ncaa-conference-tournaments/assets/css/components/modals.css' )
+    //     );
+    // }
+    
 }
 add_action( 'wp_enqueue_scripts', 'ncaa_theme_enqueue_styles', 999 );
 
