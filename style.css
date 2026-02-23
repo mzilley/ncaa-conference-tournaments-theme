@@ -97,8 +97,8 @@ body {
 
 .content-area {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem;
+    margin: 1rem auto 0;
+    padding: 0 1rem;
 }
 
 /* Footer */
@@ -130,7 +130,7 @@ body {
 /* Beta Version Badge */
 .beta-version-badge {
     position: fixed;
-    bottom: .775rem;
+    bottom: 2rem;
     left: 1rem;
     padding: 0.25rem 0.5rem;
     background: var(--orange-light);
